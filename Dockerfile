@@ -7,3 +7,5 @@ COPY ./ventas_unicah /mnt/extra-addons/ventas_unicah
 RUN chown -R odoo:odoo /mnt/extra-addons
 
 USER odoo
+
+EXPOSE 8069
