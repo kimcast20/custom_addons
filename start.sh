@@ -12,4 +12,6 @@ EOF
 
 export ODOO_RC=/tmp/odoo.conf
 
-exec /entrypoint.sh odoo
+/entrypoint.sh odoo --stop-after-init -i base
+
+exec /entrypoint.sh odoo -i base
